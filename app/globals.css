@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background-color: #fff7ec;
+  color: #221e1c;
+}
+
+/* Warm paper texture behind the page, echoing the restaurant site */
+.masa-field {
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(203, 27, 34, 0.06), transparent 42%),
+    radial-gradient(circle at 88% 4%, rgba(22, 122, 63, 0.07), transparent 38%);
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
